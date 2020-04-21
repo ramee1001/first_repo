@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    "home", #홈페이지 설치
+    "home",
+    "todo" #홈페이지 설치
     
 ]
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'boram.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'home/', 'template')],
+        'DIRS': [os.path.join(BASE_DIR, 'home/', 'template'),os.path.join(BASE_DIR, 'todo/', 'template')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
